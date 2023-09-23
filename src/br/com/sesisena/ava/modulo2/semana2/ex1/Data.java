@@ -1,5 +1,7 @@
+package br.com.sesisena.ava.modulo2.semana2.ex1;
+
 public class Data {
-    int dia, mes, ano;
+    private int dia, mes, ano;
 
     public Data(int ano, int mes, int dia){
         this.ano = ano;
@@ -30,17 +32,8 @@ public class Data {
     public int getDia(){
         return dia;
     }
-}
-public class Main {
-    public static void main(String[] args) {
-        Data data = new Data(2023, 9, 12);
 
-        int ano = data.getAno();
-        int mes = data.getMes();
-        int dia = data.getDia();
-
-        System.out.println("Ano: " + ano);
-        System.out.println("Mês: " + mes);
-        System.out.println("Dia: " + dia);
+    public void exibirData(){
+        System.out.println(dia + "/" + mes + "/" + ano);
     }
 }
